@@ -7,7 +7,7 @@ const month = months[ now.getMonth() ];
 
 function tdate(args=[]){
     if(args.length ==  0 ){
-        const WeekDay  = require("./Calendar/WeekDay").getWeekThelemic(day)
+        const WeekDay  = require("./Calendar/WeekDay").getWeekThelemicEmoji(day)
         const moonPharse = require("./Calendar/MoonPharse").getLunarPhaseIcons()
         const yearThelemic = require("./Calendar/ThelemicYear").getThelemicYear(now.getFullYear())
         const sunSign = require("./Calendar/SunSign").getSunSignEmoji(month, now.getDay())
