@@ -10,7 +10,8 @@ function tdate(args=[]){
         const WeekDay  = require("./Calendar/WeekDay").getWeekThelemic(day)
         const moonPharse = require("./Calendar/MoonPharse").getLunarPhaseIcons()
         const yearThelemic = require("./Calendar/ThelemicYear").getThelemicYear(now.getFullYear())
-        console.log(`Anno ${yearThelemic}, Sol 🌞 in, Dies ${WeekDay}, Luna ${moonPharse} in, aerae legis `)        
+        const sunSign = require("./Calendar/SunSign").getSunSignEmoji(month, now.getDay())
+        console.log(`Anno ${yearThelemic}, Sol 🌞 in ${sunSign}, Dies ${WeekDay}, Luna ${moonPharse} in, aerae legis `)        
     }else{
         console.log(`Esses args infomados: ${args}`)
     }

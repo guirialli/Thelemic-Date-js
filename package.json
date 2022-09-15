@@ -1,6 +1,6 @@
 {
   "name": "tdata",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "A simple calendar thelemic",
   "main": "src/index.js",
   "scripts": {
