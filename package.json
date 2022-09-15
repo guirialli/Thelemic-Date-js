@@ -1,0 +1,25 @@
+{
+  "name": "tdata",
+  "version": "0.0.2",
+  "description": "A simple calendar thelemic",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guirialli/Thelemic-Calendar-JS.git"
+  },
+  "keywords": [
+    "Calendar",
+    "Thelemic",
+    "Simple"
+  ],
+  "author": "Guilherme Rialli Oliveira",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/guirialli/Thelemic-Calendar-JS/issues"
+  },
+  "homepage": "https://github.com/guirialli/Thelemic-Calendar-JS#readme"
+}
