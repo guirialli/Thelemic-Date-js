@@ -11,7 +11,8 @@ function tdate(args=[]){
         const moonPharse = require("./Calendar/MoonPharse").getLunarPhaseIcons()
         const yearThelemic = require("./Calendar/ThelemicYear").getThelemicYear(now.getFullYear())
         const sunSign = require("./Calendar/SunSign").getSunSignEmoji(month, now.getDay())
-        console.log(`Anno ${yearThelemic}, Sol 🌞 in ${sunSign}, Dies ${WeekDay}, Luna ${moonPharse} in, aerae legis `)        
+        const moonSign = require("./Calendar/MoonSign").getMoonSignEmoji()
+        console.log(`Anno ${yearThelemic}, Sol 🌞 in ${sunSign}, Dies ${WeekDay}, Luna ${moonPharse} in ${moonSign}, aerae legis `)        
     }else{
         console.log(`Esses args infomados: ${args}`)
     }
