@@ -1,7 +1,7 @@
 {
   "name": "thelemic-date",
   "version": "0.5.0",
-  "description": "A simple calendar thelemic, can you use it with tdate",
+  "description": "A simple calendar thelemic.",
   "main": "src/Bin/tdate",
   "preferGlobal": true,
   "bin":{
