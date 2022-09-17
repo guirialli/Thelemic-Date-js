@@ -1,8 +1,7 @@
 
 const now = new Date();
-const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-const day = days[now.getDay()];
+const day = now.getDay()
 const month = months[now.getMonth()];
 
 function tdate(args = []) {
