@@ -1,6 +1,6 @@
 {
   "name": "thelemic-date",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A simple calendar thelemic.",
   "main": "src/Bin/tdate",
   "preferGlobal": true,
