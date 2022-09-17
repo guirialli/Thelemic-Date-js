@@ -9,7 +9,7 @@ function tdate(args = []) {
     if (args.length == 0) {
         const WeekDay = require("./Calendar/WeekDay").getWeekThelemicEmoji(day)
         const moonPharse = require("./Calendar/MoonPharse").getLunarPhaseIcons()
-        const yearThelemic = require("./Calendar/ThelemicYear").getThelemicYear(now.getFullYear())
+        const yearThelemic = require("./Calendar/ThelemicYear").getThelemicYear(now.getFullYear(), now.getDate(), (now.getMonth()+1))
         const sunSign = require("./Calendar/SunSign").getSunSignEmoji(month, now.getDay())
         const moonSign = require("./Calendar/MoonSign").getMoonSignEmoji()
         console.log(`Anno ${yearThelemic}, Sol 🌞 in ${sunSign}, Dies ${WeekDay}, Luna ${moonPharse} in ${moonSign}, aerae legis `)
@@ -28,7 +28,7 @@ function tdate(args = []) {
                 console.log(`Sol 🌞 in ${require("./Calendar/SunSign").getSunSignEmoji(month, now.getDay())}`)
                 break
             case "-y": case "--year":
-                console.log(`Anno ${require("./Calendar/ThelemicYear").getThelemicYear(now.getFullYear())}`)
+                console.log(`Anno ${require("./Calendar/ThelemicYear").getThelemicYear(now.getFullYear(), now.getDate(), (now.getMonth()+1))}`)
                 break
             case "-h": case "--help": 
             default:
@@ -42,7 +42,7 @@ function noIcon(args){
     if(args[1] == undefined){
         const WeekDay = require("./Calendar/WeekDay").getWeekThelemic(day)
         const moonPharse = require("./Calendar/MoonPharse").getLunarPhase()
-        const yearThelemic = require("./Calendar/ThelemicYear").getThelemicYear(now.getFullYear())
+        const yearThelemic = require("./Calendar/ThelemicYear").getThelemicYear(now.getFullYear(), now.getDate(), (now.getMonth()+1))
         const sunSign = require("./Calendar/SunSign").getSunSign(month, now.getDay())
         const moonSign = require("./Calendar/MoonSign").getMoonSign()
         console.log(`Anno ${yearThelemic}, Sol  in ${sunSign}, Dies ${WeekDay}, Luna (${moonPharse}) in ${moonSign}, aerae legis `)
@@ -59,7 +59,7 @@ function noIcon(args){
                 console.log(`Sol in ${require("./Calendar/SunSign").getSunSign(month, now.getDay())}`)
                 break
             case "-y": case "--year":
-                console.log(`Anno ${require("./Calendar/ThelemicYear").getThelemicYear(now.getFullYear())}`)
+                console.log(`Anno ${require("./Calendar/ThelemicYear").getThelemicYear(now.getFullYear(), now.getDate(), (now.getMonth()+1))}`)
                 break
             case "-h": case "--help": 
             default:
